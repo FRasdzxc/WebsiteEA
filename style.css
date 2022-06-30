@@ -1,0 +1,8 @@
+h1{
+    color: pink;
+    font-size: 30pt;
+}
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+}
