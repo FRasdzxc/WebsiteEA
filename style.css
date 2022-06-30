@@ -3,8 +3,13 @@ h1{
     font-size: 30pt;
 }
 body{
-    background-image: url(background.jpg);
+    background: transparent url(background.jpg) repeat-y 0 0;
     background-size: cover;
+<<<<<<< Updated upstream
     width: 1920px;
     height: 1080px;
 }
+=======
+    position: relative;
+}   
+>>>>>>> Stashed changes
