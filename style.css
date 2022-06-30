@@ -6,4 +6,7 @@ body{
     background: transparent url(background.jpg) repeat-y 0 0;
     background-size: cover;
     position: relative;
-}   
+}
+header{
+    height: 50px;
+}
