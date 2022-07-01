@@ -5,8 +5,8 @@
 }
 
 #nav, #main, #aside, #footer { 
-    background: rgb(184, 43, 8); border: 1px solid black; border-radius: 10px; 
-    margin: 10px; padding: 15px; }
+    background: rgb(184, 43, 8); border: 1px solid black; border-radius: 8px; 
+    margin: 5px; padding: 15px; }
 
 h1{
     color: pink;
@@ -57,11 +57,22 @@ body{
     margin-top: 41px;
 }
 
-#nav{
+
+#nav { 
+    order: 2; 
+    width: 200px; 
+}
+
+#aside{
+    order: 4;
     width: 200px;
 }
 
-#nav { order: 2; width: 200px; }
+#footer{
+    order: 5;
+    height: 50px;
+    width: 20%;
+}
 
 #header div{
     clear: none;
