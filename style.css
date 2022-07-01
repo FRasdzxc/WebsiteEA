@@ -15,6 +15,7 @@ h1{
 body{
     background: transparent url(background.jpg) repeat-y 0 0;
     background-size: cover;
+    margin: 50 0 0 0;
     position: relative;
 }
 #header{
@@ -34,8 +35,7 @@ body{
     display:flex;
     flex-direction: column;
     background-color: #454545;
-    margin-left: -8px;
-    margin-top: 41px;
+    height: 100%;
     width: 25%;
 }
 #menu a{
@@ -45,16 +45,22 @@ body{
     border-radius: 5px;
     background-color: #707070;
 }
+.menu_heading{
+    background-color: #333333;
+    margin: 0 0;
+    padding: 13px;
+    letter-spacing: 1px;
+}
 .menu_item{
+    display: flex;
     margin: 0 20px;
     padding: 13px;
     letter-spacing: 1px;
 }
-#main{
+#player{
     order: 3;
     width: 100%;
     height: 70%;
-    margin-top: 41px;
 }
 
 #nav{
