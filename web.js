@@ -1,3 +1,6 @@
+function cMusic(music){
+    document.getElementById('musicPlayer').src = music;
+}
 function backToIndex(){
     window.location = "index.html";
 }

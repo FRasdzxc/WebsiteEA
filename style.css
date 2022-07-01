@@ -1,6 +1,7 @@
 #flex-container{
     display: flex;
     flex-flow: row warp;
+    height: 100%;
 }
 h1{
     color: pink;
@@ -21,21 +22,45 @@ body{
     right: 0;
     width: 100%;
     height: 50px;
+    background-color: #383838;
+}
+#menu{
+    order: 2;
+    display:flex;
+    flex-direction: column;
     background-color: #454545;
+    margin-left: -8px;
+    margin-top: 41px;
+    width: 25%;
+}
+#menu a{
+    color: #E0E0E0;
+}
+#menu a:hover{
+    border-radius: 5px;
+    background-color: #707070;
+}
+.menu_item{
+    margin: 0 20px;
+    padding: 13px;
+    letter-spacing: 1px;
 }
 #main{
-    order: 2;
-    margin-top: 50px;
+    order: 3;
+    width: 100%;
+    height: 70%;
+    margin-top: 41px;
 }
 #header div{
     clear: none;
 }
+
 .button{
-    background-color: #454545;
+    background-color: #383838;
     border: none;
     padding: 0 25px;
 }
-
 .button2{
     background: url(music-solid.svg);
+
 }
