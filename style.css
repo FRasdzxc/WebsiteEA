@@ -1,3 +1,7 @@
+#flex-container{
+    display: flex;
+    flex-flow: row warp;
+}
 h1{
     color: pink;
     font-size: 30pt;
@@ -7,6 +11,31 @@ body{
     background-size: cover;
     position: relative;
 }
-header{
+#header{
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     height: 50px;
+    background-color: #454545;
+}
+#main{
+    order: 2;
+    margin-top: 50px;
+}
+#header div{
+    clear: none;
+}
+.button{
+    background-color: #454545;
+    border: none;
+    padding: 0 25px;
+}
+
+.button2{
+    background: url(music-solid.svg);
 }
