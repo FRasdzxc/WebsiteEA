@@ -14,8 +14,9 @@ h1{
 }
 body{
     background: transparent url(background.jpg) repeat-y 0 0;
-    background-size: cover;
     margin: 50 0 0 0;
+    width: 100%;
+    height: auto;
     position: relative;
 }
 #header{
@@ -32,10 +33,11 @@ body{
 }
 #menu{
     order: 2;
-    display:flex;
+    display: flex;
     flex-direction: column;
     background-color: #454545;
-    height: 100%;
+    background-size: cover;
+    height: 105%;
     width: 25%;
 }
 #menu a{
@@ -52,9 +54,8 @@ body{
     letter-spacing: 1px;
 }
 .menu_item{
-    display: flex;
     margin: 0 20px;
-    padding: 13px;
+    padding: 10px;
     letter-spacing: 1px;
 }
 #player{
@@ -99,4 +100,19 @@ body{
 .button2{
     background: url(music-solid.svg);
 
+}
+@media only screen and (max-width: 800px) {
+    #flex-container {
+        flex-flow: column;
+    }
+    #menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu_item {
+        display: none;
+    }
+    #player {
+        bottom: 0;
+    }
 }
