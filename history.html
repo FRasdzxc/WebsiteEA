@@ -108,4 +108,35 @@
         </table>
         </div>
     </body>
+    <script>
+        var already = 0;
+        window.addEventListener('resize', function(){
+            if(window.innerWidth <= 800){
+                if(already == 0){
+                    already = 1;
+                    document.getElementById('home').src = 'home.png';
+                }
+            }
+            if(window.innerWidth > 800){
+                if(already == 1){
+                    already = 0;
+                    document.getElementById('home').src = 'logo.png';
+                }
+            }
+        });
+        window.addEventListener('load', function(){
+            if(window.innerWidth <= 800){
+                if(already == 0){
+                    already = 1;
+                    document.getElementById('home').src = 'home.png';
+                }
+            }
+            if(window.innerWidth > 800){
+                if(already == 1){
+                    already = 0;
+                    document.getElementById('home').src = 'logo.png';
+                }
+            }
+        });
+    </script>
 </html>
