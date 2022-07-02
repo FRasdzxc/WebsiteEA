@@ -7,73 +7,75 @@
     <body>
         <div id="flex-container">
             <div id="header">
-                <button class="button button1" onclick="cWebPage('index.html')">
-                    <img src="logo.png" style="width:auto;height: 50px;">         
+                <button class="button" onclick="cWebPage('index.html')">
+                    <img id="home" src="logo.png" style="width: auto; height: 50px;">
                 </button>
-                <button class="button button2" onclick="cWebPage('music.html')">
-                    <svg viewBox="0 0 512 512"><path d="M511.1 367.1c0 44.18-42.98 80-95.1 80s-95.1-35.82-95.1-79.1c0-44.18 42.98-79.1 95.1-79.1c11.28 0 21.95 1.92 32.01 4.898V148.1L192 224l-.0023 208.1C191.1 476.2 149 512 95.1 512S0 476.2 0 432c0-44.18 42.98-79.1 95.1-79.1c11.28 0 21.95 1.92 32 4.898V126.5c0-12.97 10.06-26.63 22.41-30.52l319.1-94.49C472.1 .6615 477.3 0 480 0c17.66 0 31.97 14.34 32 31.99L511.1 367.1z"/></svg>
+                <button class="button" onclick="cWebPage('music.html')">
+                    <img src="music.png" style="width: auto; height: 50px;">
                 </button>
-                <button class="button button3" onclick="cWebPage('history.html')">website2</button>
+                <button class="button" onclick="cWebPage('history.html')">
+                    <img src="history.png" style="width: auto; height: 50px;">
+                </button>
             </div>
             <div id="menu">
                 <a class="menu_heading" style="text-align: center;" onclick="cStatus1()">
                     <span>THE BOOK</span>
                 </a>
-                <a class="menu_item" id="item1" onclick="cMusic('https://www.youtube.com/embed/vcGbefQBvJ4?autoplay=1')">
+                <a class="menu_item" id="item1" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/vcGbefQBvJ4?autoplay=1')">
                     <span>アンコール</span>
                 </a>
-                <a class="menu_item" id="item2" onclick="cMusic('https://www.youtube.com/embed/kzdJkT4kp-A?autoplay=1')">
+                <a class="menu_item" id="item2" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/kzdJkT4kp-A?autoplay=1')">
                     <span>ハルジオン</span>
                 </a>
-                <a class="menu_item" id="item3" onclick="cMusic('https://www.youtube.com/embed/sAuEeM_6zpk?autoplay=1')">
+                <a class="menu_item" id="item3" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/sAuEeM_6zpk?autoplay=1')">
                     <span>あの夢をなぞって</span>
                 </a>
-                <a class="menu_item" id="item4" onclick="cMusic('https://www.youtube.com/embed/8iuLXODzL04?autoplay=1')">
+                <a class="menu_item" id="item4" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/8iuLXODzL04?autoplay=1')">
                     <span>たぶん</span>
                 </a>
-                <a class="menu_item" id="item5" onclick="cMusic('https://www.youtube.com/embed/Y4nEEZwckuU?autoplay=1')">
+                <a class="menu_item" id="item5" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/Y4nEEZwckuU?autoplay=1')">
                     <span>群青</span>
                 </a>
-                <a class="menu_item" id="item6" onclick="cMusic('https://www.youtube.com/embed/vd3IlOjSUGQ?autoplay=1')">
+                <a class="menu_item" id="item6" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/vd3IlOjSUGQ?autoplay=1')">
                     <span>ハルカ</span>
                 </a>
-                <a class="menu_item" id="item7" onclick="cMusic('https://www.youtube.com/embed/x8VYWazR5mE?autoplay=1')">
+                <a class="menu_item" id="item7" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/x8VYWazR5mE?autoplay=1')">
                     <span>夜に駆ける</span>
                 </a>
                 <a class="menu_heading" style="text-align: center;" onclick="cStatus2()">
                     <span>THE BOOK 2</span>
                 </a>
-                <a class="menu_item" id="item8" onclick="cMusic('https://www.youtube.com/embed/qDL3zhB8-MM?autoplay=1')">
+                <a class="menu_item" id="item8" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/qDL3zhB8-MM?autoplay=1')">
                     <span>ツバメ</span>
                 </a>
-                <a class="menu_item" id="item9" onclick="cMusic('https://www.youtube.com/embed/nhOhFOoURnE?autoplay=1')">
+                <a class="menu_item" id="item9" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/nhOhFOoURnE?autoplay=1')">
                     <span>三原色</span>
                 </a>
-                <a class="menu_item" id="item10" onclick="cMusic('https://www.youtube.com/embed/wJQ9ig_d8yY?autoplay=1')">
+                <a class="menu_item" id="item10" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/wJQ9ig_d8yY?autoplay=1')">
                     <span>大正浪漫</span>
                 </a>
-                <a class="menu_item" id="item11" onclick="cMusic('https://www.youtube.com/embed/K1Tz2yNmamI?autoplay=1')">
+                <a class="menu_item" id="item11" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/K1Tz2yNmamI?autoplay=1')">
                     <span>もう少しだけ</span>
                 </a>
-                <a class="menu_item" id="item12" onclick="cMusic('https://www.youtube.com/embed/VyvhvlYvRnc?autoplay=1')">
+                <a class="menu_item" id="item12" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/VyvhvlYvRnc?autoplay=1')">
                     <span>優しい彗星</span>
                 </a>
-                <a class="menu_item" id="item13" onclick="cMusic('https://www.youtube.com/embed/dy90tA3TT1c?autoplay=1')">
+                <a class="menu_item" id="item13" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/dy90tA3TT1c?autoplay=1')">
                     <span>怪物</span>
                 </a>
-                <a class="menu_item" id="item14" onclick="cMusic('https://www.youtube.com/embed/I0kytvnHG-Q?autoplay=1')">
+                <a class="menu_item" id="item14" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/I0kytvnHG-Q?autoplay=1')">
                     <span>もしも命が描けた</span>
                 </a>
-                <a class="menu_item" id="item15" onclick="cMusic('https://www.youtube.com/embed/mnta9Pp2LqA?autoplay=1')">
+                <a class="menu_item" id="item15" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/mnta9Pp2LqA?autoplay=1')">
                     <span>ラブレター</span>
                 </a>
                 <a class="menu_heading" style="text-align: center;" onclick="cStatus3()">
                     <span>OTHERS</span>
                 </a>
-                <a class="menu_item" id="item16" onclick="cMusic('https://www.youtube.com/embed/2-c0DFt6vK4?autoplay=1')">
+                <a class="menu_item" id="item16" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/2-c0DFt6vK4?autoplay=1')">
                     <span>ミスター</span>
                 </a>
-                <a class="menu_item" id="item17" onclick="cMusic('https://www.youtube.com/embed/_WVXrDmm-P0?autoplay=1')">
+                <a class="menu_item" id="item17" style="display: flex;" onclick="cMusic('https://www.youtube.com/embed/_WVXrDmm-P0?autoplay=1')">
                     <span>好きだ</span>
                 </a>
             </div>
@@ -84,4 +86,71 @@
 
 
     </body>
+    <script>
+        var already = 0;
+        window.addEventListener('resize', function(){
+            if(window.innerWidth <= 800){
+                if(already == 0){
+                    if(document.getElementById('item1').style.display == "flex"){
+                        cStatus1();
+                    }
+                    if(document.getElementById('item8').style.display == "flex"){
+                        cStatus2();
+                    }
+                    if(document.getElementById('item16').style.display == "flex"){
+                        cStatus3();
+                    }
+                    already = 1;
+                    document.getElementById('home').src = 'home.png';
+                }
+            }
+            if(window.innerWidth > 800){
+                if(already == 1){
+                    if(document.getElementById('item1').style.display == "none"){
+                        cStatus1();
+                    }
+                    if(document.getElementById('item8').style.display == "none"){
+                        cStatus2();
+                    }
+                    if(document.getElementById('item16').style.display == "none"){
+                        cStatus3();
+                    }
+                    already = 0;
+                    document.getElementById('home').src = 'logo.png';
+                }
+            }
+        });
+        window.addEventListener('load', function(){
+            if(window.innerWidth <= 800){
+                if(already == 0){
+                    if(document.getElementById('item1').style.display == "flex"){
+                        cStatus1();
+                    }
+                    if(document.getElementById('item8').style.display == "flex"){
+                        cStatus2();
+                    }
+                    if(document.getElementById('item16').style.display == "flex"){
+                        cStatus3();
+                    }
+                    already = 1;
+                    document.getElementById('home').src = 'home.png';
+                }
+            }
+            if(window.innerWidth > 800){
+                if(already == 1){
+                    if(document.getElementById('item1').style.display == "none"){
+                        cStatus1();
+                    }
+                    if(document.getElementById('item8').style.display == "none"){
+                        cStatus2();
+                    }
+                    if(document.getElementById('item16').style.display == "none"){
+                        cStatus3();
+                    }
+                    already = 0;
+                    document.getElementById('home').src = 'logo.png';
+                }
+            }
+        });
+    </script>
 </html> 

@@ -53,34 +53,3 @@ function cStatus3(){
         document.getElementById('item17').style.display = "none";
     }
 }
-var already = 0;
-window.addEventListener('resize', function(event){
-    if(window.innerWidth <= 800){
-        if(already == 0){
-            if(document.getElementById('item1').style.display == "flex"){
-                cStatus1();
-            }
-            if(document.getElementById('item8').style.display == "flex"){
-                cStatus2();
-            }
-            if(document.getElementById('item16').style.display == "flex"){
-                cStatus3();
-            }
-            already = 1;
-        }
-    }
-    if(window.innerWidth > 800){
-        if(already == 1){
-            if(document.getElementById('item1').style.display == "none"){
-                cStatus1();
-            }
-            if(document.getElementById('item8').style.display == "none"){
-                cStatus2();
-            }
-            if(document.getElementById('item16').style.display == "none"){
-                cStatus3();
-            }
-            already = 0;
-        }
-    }
-});
