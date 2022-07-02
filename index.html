@@ -18,20 +18,45 @@
                     <img src="history.png" style="width: auto; height: 50px;">
                 </button>
             </div>
+            <div id="banner">
+                <img src="banner.jpg">
+            </div>
         </div>
-        <table id="table-4">
-            <thead>YOASOBI</thead> 
-            <tbody>
-                <tr>
-                    <td>
-                        <a href="https://www.youtube.com/c/Ayase0404/featured"><img src="YOASOBI_banner.jpg">
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <img src="YOASOBI.jpg" width="300" height="400">
-                </tr>
-            </tbody>
-        </table>
-    </body>   
+
+    <p><a href="https://www.youtube.com/c/Ayase0404/featured">
+        Subscribe YOASOBI YouTube Channel
+    </a></p>
+    <img src="YOASOBI.jpg" width="300" height="400">
+    </body>
+    <script>
+        var already = 0;
+        window.addEventListener('resize', function(){
+            if(window.innerWidth <= 800){
+                if(already == 0){
+                    already = 1;
+                    document.getElementById('home').src = 'home.png';
+                }
+            }
+            if(window.innerWidth > 800){
+                if(already == 1){
+                    already = 0;
+                    document.getElementById('home').src = 'logo.png';
+                }
+            }
+        });
+        window.addEventListener('load', function(){
+            if(window.innerWidth <= 800){
+                if(already == 0){
+                    already = 1;
+                    document.getElementById('home').src = 'home.png';
+                }
+            }
+            if(window.innerWidth > 800){
+                if(already == 1){
+                    already = 0;
+                    document.getElementById('home').src = 'logo.png';
+                }
+            }
+        });
+    </script>
 </html>
