@@ -4,6 +4,10 @@
     height: 100%;
 }
 
+#nav, #main, #aside { 
+    background: rgb(184, 43, 8); border: 1px solid black; border-radius: 8px; 
+    margin: 5px; padding: 15px; }
+
 h1{
     color: pink;
     font-size: 30pt;
@@ -12,6 +16,7 @@ body{
     background: transparent url(background.jpg) repeat-y 0 0;
     margin-top: 50px;
     margin-left: 0;
+    margin-bottom: 0;
     width: 100%;
     height: auto;
     position: relative;
@@ -86,7 +91,11 @@ body{
 
 #footer{
     order: 5;
-    height: 50px;
+    display: flex;
+    position: relative;
+    bottom: 0;
+    flex-flow: column;
+    height: auto;
     width: 100%;
 }
 
