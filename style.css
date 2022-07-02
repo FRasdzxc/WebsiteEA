@@ -223,3 +223,57 @@ body{
 #table-4 tr:nth-child(odd) {
     background: rgb(199, 118, 118)
 }
+
+.card{
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: relative;
+    width: 3300px;
+    height: 450px;
+    overflow: hidden;
+    margin: 20px;
+    background-color: lightpink;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 30px #2c2c2c;
+    color: var(#454545);
+}
+
+.photo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.photo::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #333, transparent);
+}
+
+.card:hover .photo::before{
+    display: none;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card :hover .photo{
+    width: 120px;
+    height: 120px;
+    top: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #111;
+}
