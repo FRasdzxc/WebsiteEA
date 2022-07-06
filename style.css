@@ -278,3 +278,15 @@ body{
     height: 100%;
     object-fit: cover;
 }
+
+.card:hover .photo{
+    width: 120;
+}
+
+.card p{
+    width: 90;
+    text-indent: 2em;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
